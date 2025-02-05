@@ -11,6 +11,8 @@ let clock = function () {
   let ampm = "AM";
   if (hr == 0) {
     hr = 12;
+  } else if (hr == 12) {
+    ampm = "PM";
   } else if (hr > 12) {
     hr = hr - 12;
     ampm = "PM";
