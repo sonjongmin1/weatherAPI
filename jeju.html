@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>날씨 API</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <div class="date">
+        <div class="timeBox">
+          <div class="time">실시간</div>
+          <div class="apm"></div>
+        </div>
+        <div class="day"></div>
+      </div>
+      <div class="city" id="city">도시이름</div>
+      <div class="weImgBox"><img class="weImg" src="" alt="날씨" /></div>
+      <div class="temp">
+        <div class="tempNum" id="tempNum"></div>
+        <ul class="tempDes">
+          <li>
+            <ul class="tempDesDetail">
+              <li>최저</li>
+              <li class="lowTemp" id="lowTemp"></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="tempDesDetail">
+              <li>최고</li>
+              <li class="highTemp" id="highTemp"></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <ul class="location">
+        <li><a href="./index.html">서울</a></li>
+        <li><a href="./busan.html">부산</a></li>
+        <li><a href="./jeju.html">제주</a></li>
+      </ul>
+    </div>
+    <div class="des">
+      <ul>
+        <li>
+          <ul class="desDetail">
+            <li>위치</li>
+            <li id="cityLo"></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="desDetail">
+            <li>날씨</li>
+            <li id="desDeatailSt"></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="desDetail">
+            <li>풍속</li>
+            <li id="desDetailWind"></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="desDetail">
+            <li>습도</li>
+            <li id="desDtailHu">53%</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <script src="./js/main.js"></script>
+    <script src="./js/weatherAPI.js"></script>
+  </body>
+</html>
+
+<!-- 
+- API 날씨
+- 오늘 시간
+한페이지 꽉차게
+탭 한개 이상
+1. 서울 
+2. 부산 
+3. 대전 
+4. 인천 
+-->

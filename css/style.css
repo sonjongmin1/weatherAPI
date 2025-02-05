@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #f2f2f2;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.layout {
+  position: relative;
+  width: 1000px;
+  height: 700px;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.timeBox {
+  display: flex;
+}
+
+.time {
+  font-size: 46px;
+}
+
+.apm {
+  display: flex;
+  align-items: center;
+  color: gray;
+  font-size: 24px;
+  font-weight: bolder;
+  margin-left: 10px;
+}
+
+.day {
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.city {
+  font-size: 46px;
+}
+
+.weImgBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.weImg {
+  width: 350px;
+  height: 350px;
+  background-repeat: cover;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.temp {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  font-size: 46px;
+}
+
+.tempDes {
+  display: flex;
+  font-size: 23px;
+}
+
+.tempDes > li {
+  margin-right: 30px;
+}
+
+.tempDesDetail > li:first-child {
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.des {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 150px;
+  height: 700px;
+}
+
+.des > ul {
+  background-color: lightgrey;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.des > ul > li {
+  text-align: center;
+  align-content: center;
+  height: 100px;
+  font-weight: bolder;
+}
+
+.desDetail > li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.location {
+  position: absolute;
+  right: 10px;
+  top: 120px;
+}
+
+.location > li {
+  width: 100px;
+  height: 70px;
+  text-align: center;
+  align-content: center;
+  border-radius: 10px;
+  background-color: lightgray;
+  font-weight: bolder;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.location > li:not(:last-child) {
+  margin-bottom: 20px;
+}
